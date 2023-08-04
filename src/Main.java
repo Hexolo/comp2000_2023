@@ -15,7 +15,9 @@ public class Main extends JFrame {
         @Override
         public void paint(Graphics g) {
            Grid grid = new Grid();
+           Cell cell = new Cell();
            grid.paint(g);
+           cell.paint(g);
         }
     }
 
