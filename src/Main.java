@@ -1,7 +1,6 @@
 import javax.swing.*;
-import javax.swing.plaf.DimensionUIResource;
-
 import java.awt.*;
+
 
 public class Main extends JFrame {
     public static void main(String[] args) throws Exception {
@@ -15,14 +14,8 @@ public class Main extends JFrame {
 
         @Override
         public void paint(Graphics g) {
-            for(int i=10; i<710; i+=35) {
-                for(int j=10; j<710; j+=35) {
-                    g.setColor(Color.WHITE);
-                    g.fillRect(i, j, 35, 35);
-                    g.setColor(Color.BLACK);
-                    g.drawRect(i, j, 35, 35);
-                }
-            }
+           Grid grid = new Grid();
+           grid.paint(g);
         }
     }
 
